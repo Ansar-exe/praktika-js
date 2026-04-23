@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f0f13;
+  color: #e0e0e0;
+}
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.app > h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #a78bfa;
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  color: #818cf8;
+  border-bottom: 1px solid #2d2d3a;
+  padding-bottom: 0.5rem;
+  margin: 2.5rem 0 1.2rem;
+}
+
+.task {
+  background: #1a1a24;
+  border: 1px solid #2d2d3a;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.task h3 {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  margin: 0 0 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.task .result {
+  font-size: 0.9rem;
+  color: #4ade80;
+  background: #0d1117;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-family: 'Courier New', monospace;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.task button {
+  margin-top: 0.6rem;
+  padding: 0.45rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #4f46e5;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.task button:hover {
+  background: #4338ca;
+}
+
+.task input[type="text"],
+.task input[type="number"] {
+  padding: 0.4rem 0.7rem;
+  border: 1px solid #3d3d50;
+  border-radius: 6px;
+  background: #0d1117;
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  outline: none;
+  width: 100%;
+  margin-top: 0.4rem;
+}
+
+.task input:focus {
+  border-color: #4f46e5;
+}
+
+.task ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+  color: #a0aec0;
+}
+
+.task form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+
+.counter-display {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #a78bfa;
+  margin: 0.5rem 0;
+}
